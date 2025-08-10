@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online purchases and deliveries">
+    <title>Online Advertising</title>
+    <link rel="icon" type="image/x-icon" href="https://images.unsplash.com/photo-1577538928305-3807c3993047?w=600&auto=format&fit=crop&q=60">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        header, main, footer { margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        fieldset { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+        legend { font-weight: bold; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 50%; padding: 8px; margin-top: 5px; }
+        input[type="radio"], input[type="checkbox"] { width: auto; }
+        button { padding: 10px 15px; background: #28a745; color: #fff; border: none; cursor: pointer; }
+        button:hover { background: #218838; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Online Advertising</h1>
+    <p>Linking potential customers to a product with realiable sellers onlinine; ensuring that the product is of good quality, and that the customer is satisfied with the product</p>
+</header>
+
+<main>
+
+    <!-- Lists Section -->
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Online Sales</li>
+            <li>Deliveries</li>
+            <li>Customer Support</li>
+        </ul>
+
+        <h3>Steps to Start</h3>
+        <ol>
+            <li>Sign Up</li>
+            <li>Choose a Service</li>
+            <li>Get Started</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Pricing Table</h2>
+        <table>
+            <caption>Our Service Plans</caption>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Features</th>
+                    <th>Price ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>Pizza Delivery</td>
+                    <td>999</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>Drink Delivery</td>
+                    <td>199</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>All Services</td>
+                    <td>299</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Media Samples</h2>
+        <img src="https://images.unsplash.com/photo-1721761961411-8d9a578eb246?w=600&auto=format&fit=crop&q=60" alt="Sample Design" width="300">
+        
+        <h3>Listen to Our Anthem</h3>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Watch Our Promo Video</h3>
+        <video width="320" controls poster="poster.jpg">
+            <thumbnail src="https://images.unsplash.com/photo-1494908528889-fa8ed729bcd8?w=600&auto=format&fit=crop&q=60">
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Contact & Registration Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Setup</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                       title="Must contain at least one number, one uppercase, one lowercase letter, and at least 8 characters">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <p>Preferred Contact Method:</p>
+                <label><input type="radio" name="contact" value="email" required> Email</label>
+                <label><input type="radio" name="contact" value="phone"> Phone</label>
+
+                <p>Subscribe to:</p>
+                <label><input type="checkbox" name="newsletter"> Newsletter</label>
+                <label><input type="checkbox" name="offers"> Special Offers</label>
+
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="web">KFC Delivery</option>
+                    <option value="seo">Drink Delivery</option>
+                    <option value="content">Pizza Delivery</option>
+                </select>
+
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file">
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <textarea name="comments" id="comments" rows="4" placeholder="Your message..."></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Online Stores Platform. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
